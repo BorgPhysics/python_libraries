@@ -138,7 +138,7 @@ def set_colors_and_initial_node_positions(json_nodes):
             color = 'lightyellow'
             
         node_colors[node_name] = color        
-    return pos, color
+    return pos, node_colors
 
 def has_conflict(node_name, new_coords, pos):
     for existing_node, coords in pos.items():
@@ -560,3 +560,9 @@ class SwimlaneDocumentation:
         
 #         with open(self.log_file_name, "a") as log_file:
 #             log_file.write(log_entry + "\n")
+        
+        
+        
+        
+        
+        
